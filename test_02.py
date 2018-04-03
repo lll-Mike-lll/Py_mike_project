@@ -9,3 +9,12 @@ for i in range(5):
     print(i)
 
 print('mike')
+
+a = []
+for i in range(3,10):
+    a.append (2)
+    
+print(a)
+
+a[2]=10
+print(a)
