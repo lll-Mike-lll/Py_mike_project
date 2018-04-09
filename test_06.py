@@ -26,3 +26,15 @@ print(ptt_data_sign)
 print(type(ptt_data_sign))
 print(len(ptt_data_date))
 print(len(ptt_data_sign))
+
+
+ptt_sellect_date = []
+ptt_sellect_sign = []
+
+print(ptt_data_sign.index(1))
+print('xxxx')
+check = 1
+for i in range(len(ptt_data_date)):
+    if ptt_data_sign[i] == (-check):
+        print("%d - %d" % (i , ptt_data_sign[i]))
+        check = check*(-1)
