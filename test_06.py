@@ -9,12 +9,20 @@ Created on Thu Apr  5 22:48:18 2018
 #print(b)
 import pandas as pd
 df = pd.read_excel("D:\ptt_data_1.xlsx")
-print(df)
+#print(df)
 n =len(df)
 print(len(df))
-ya =[]
-
+print(df.iloc[0,0])
+ptt_data_date = []
+ptt_data_sign = []
 for i in range(n):
+    ptt_data_date.append(df.iloc[i,0])
     
-    
+for i in range(n):
+    ptt_data_sign.append(df.iloc[i,1])
+print(ptt_data_date)
+print(ptt_data_sign)
 
+print(type(ptt_data_sign))
+print(len(ptt_data_date))
+print(len(ptt_data_sign))
