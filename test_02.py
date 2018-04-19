@@ -19,3 +19,11 @@ print(a)
 a[2]=10
 print(a)
 print(type(a))
+
+b = [2,3,5,7,9]
+print(b.index(5))
+
+c = 'mike'
+d= 'mike'
+if c==d:
+    print('ok')

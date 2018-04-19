@@ -39,7 +39,7 @@ for j in sign1:
 xa = 100000
 xc = ptt_close[sign1[0]]
 xb = (xa-(xa%xc))/xc
-xd = 
+xd = 1
 #xd = int(xc)
 #
 #print(xd)
