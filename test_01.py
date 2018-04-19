@@ -11,3 +11,4 @@ data1 = pd.read_html(url);
 
 #print(data1[0])
 print(data1[0].iloc[1:0])
+mike
