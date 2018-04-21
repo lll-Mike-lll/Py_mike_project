@@ -5,6 +5,8 @@ Created on Fri Apr 20 11:50:05 2018
 @author: wuttinun_r
 """
 
+
+
 a = input('name:')
 
 def inp(a):
@@ -14,3 +16,4 @@ def inp(a):
     return data
     
 print(inp(a))
+
