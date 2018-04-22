@@ -7,7 +7,6 @@ Created on Fri Apr 20 11:50:05 2018
 import mysql.connector
 import pandas as pan
 def inp(a):
-    
     url = 'http://www.panphol.com/data/page/stockprice/'+a+'#'
     data = pan.read_html(url)
     return data
@@ -50,26 +49,17 @@ data_stock_db = tuple(data_stock)
 print(type(data_stock_db))
 inp(name)
 conn_db(name)
-nrow = len(data_stock[0])
+n = len(data_stock[0])
 data_list1 = []
-data_list2 = []
-data_list3 = []
-data_list4 = []
-data_list5 = []
-data_list6 = []
-data_list7 = []
-for j in range(nrow):
-    data_list1.append(data_stock[0].iloc[j,0])
-    data_list2.append(data_stock[0].iloc[j,1])
-    data_list3.append(data_stock[0].iloc[j,2])
-    data_list4.append(data_stock[0].iloc[j,3])
-    data_list5.append(data_stock[0].iloc[j,4])
-    data_list6.append(data_stock[0].iloc[j,7])
-    data_list7.append(data_stock[0].iloc[j,8])
+for i in range(9):
+    data_list1.append([])
+for i in range(9):
+    for j in range(n):
+        data_list1[i].append(data_stock[0].iloc[j,i])
 
 #print(data_list)
-for i in range(nrow):
-    conn_db2(name,i,data_list1[i],'pp','pp','pp','pp','pp','pp')
+for i in range(n):
+    conn_db2(name,i,data_list1[0][n-1-i],str(data_list1[1][n-1-i]),str(data_list1[2][n-1-i]),str(data_list1[3][n-1-i]),str(data_list1[4][n-1-i]),str(data_list1[7][n-1-i]),str(data_list1[8][n-1-i]))
 
 #a = input('code (#0 for all),(#1 for each): ')
 #if a == '0':
