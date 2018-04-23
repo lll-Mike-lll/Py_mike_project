@@ -29,4 +29,11 @@ def se_db(name):
     
 data_fet = se_db(input('name: '))
 print(type(data_fet))
+print(data_fet[0][1])
+print(type(data_fet[0][1]))
 
+d= 100000
+pp=int(float(data_fet[1][2]))
+vol = (d-(d%pp))/pp
+print(vol)
+print(pp)
