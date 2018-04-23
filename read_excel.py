@@ -79,6 +79,7 @@ vol_ptt.append(0)
 d=0
 for i in range(len(data_fet)):
     for j in range(len(ptt_sellect_date)):
+#        print(j)
         if ptt_sellect_date[j] == data_fet[i][1]:
             collect_n.append(i)
 #            if ptt_sellect_sign[i] == 1:
@@ -118,6 +119,8 @@ for i in collect_n:
     print(data_fet[i][2])
     
 print(roi)
+print(len(ptt_sellect_sign))
+print(len(collect_n))
 #money = 100000
 #for i in collect_n:
 #    if 
